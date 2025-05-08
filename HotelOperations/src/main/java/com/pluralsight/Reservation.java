@@ -1,18 +1,32 @@
 package com.pluralsight;
 
+
+//class
 public class Reservation {
+
+    //attributes
     private String roomType;
     private double price;
     private int numberOfNights;
     private boolean isWeekend;
     private double reservationTotal;
 
+   //constructor
+    public Reservation(double reservationTotal, boolean isWeekend, int numberOfNights, double price, String roomType) {
+        this.reservationTotal = reservationTotal;
+        this.isWeekend = isWeekend;
+        this.numberOfNights = numberOfNights;
+        this.price = price;
+        this.roomType = roomType;
+    }
+
+    //getters & setters
     public String getRoomType() {
         return roomType;
     }
 
     public void setRoomType(String roomType) {
-        this.roomType = roomType;
+        this.roomType = (roomType);
     }
 
     public double getReservationTotal() {
@@ -46,13 +60,7 @@ public class Reservation {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    public Reservation(double reservationTotal, boolean isWeekend, int numberOfNights, double price, String roomType) {
-        this.reservationTotal = reservationTotal;
-        this.isWeekend = isWeekend;
-        this.numberOfNights = numberOfNights;
-        this.price = price;
-        this.roomType = roomType;
-    }
 }
 
+
+//methods are the equations that you are scared of that make the program calculate stuff
